@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mochiy+Pop+One">
+    <style>
+        span{
+            font-size: 20pt;
+            background-color: #263755;
+            padding: 5px;
+            letter-spacing: 2px;
+            transition: 0.5s;
+            box-shadow: 1px 1px 15px red;
+            margin: 10%;
+            font-family: fantasy;
+        }
+        .movingbox{
+            width:   50px;
+            height: 1px;
+            background-color: aqua;
+            transition: 00.5s;
+        }
+        .movingbox:hover{
+            margin-left: 75%;
+        }
+        .signinblock{
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+        }
+        .elements{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            background-color: rgb(217, 131, 150);
+            padding: 10px;
+            transition: 0.5s;
+            box-shadow: 1px 1px 15px red;
+            border-radius: 25px;
+        }
+        .elements:hover{
+            box-shadow: 1px 1px 15px green;
+            background-color: rgb(134, 64, 79);
+            border-radius: 50px;
+        }
+        form{
+            font-size: 24pt;
+            font-variant: small-caps;
+            text-align: center;
+            font-family: fantasy;
+
+        }
+        span:hover{
+            letter-spacing: 4px;
+            
+            box-shadow: 1px 1px 15px green;
+        }
+        a{
+            text-decoration: none;
+            color: #ffc000;
+        }
+        body{
+            background-color:rgb(14,52,91);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="signinblock">
+            <div class="elements">
+                <form>
+                    username<br>
+                    <input type="text" placeholder="username">
+                </form>
+                <form>
+                    password<br>
+                    <input type="password" placeholder="password">
+                </form>
+                <span>
+                    <a href="#" target="_blank">
+                       <label for="movingbox"> Login</label>
+                    </a>
+                </span></div>
+                <!--<div class="movingbox">
+            </div>-->
+    </div>
+</body>
